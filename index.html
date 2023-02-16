@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Muster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/384fb3875f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="bg-slate-300 px-3 py-10 md:p-10 ">
+      <div class="w-11/12 md:w-10/12 mx-auto">
+        <h1 class="text-3xl text-center font-bold text-sky-700">
+          Money Muster <i class="fa-solid fa-sack-dollar text-green-600"></i>
+        </h1>
+        <div class="pt-7 md:pt-10 md:grid md:grid-cols-2 md:gap-5">
+          <img class="rounded-lg w-full h-[430px] sm:h-[650px] " src="images/money.jpg" alt="" />
+          <div class="mx-auto ">
+            <h1 class="text-xl mt-10 md:mt-0 mb-3 text-center font-semibold">Income</h1>
+            <div>
+                <label for="income_input" class="mr-8">Income :</label>
+                <input id="income_input" class="p-2 rounded-md w-7/12 " type="text" value="10000" />
+            </div>
+
+
+            <h1 class="text-xl my-3  text-center font-semibold">Expenses</h1>
+
+            <div>
+                <div>
+                    <label for="income_input" class="mr-12">Food :</label>
+                    <input id="food_input" class="p-2 rounded-md w-7/12 " type="text" value="3000" />
+                </div>
+                <div class="my-5">
+                    <label for="rent_input" class="mr-[52px]">Rent :</label>
+                    <input id="rent_input" class="p-2 rounded-md w-7/12 " type="text" value="2000" />
+                </div>
+                <div>
+                    <label for="clothes_input" class="mr-8">Clothes :</label>
+                    <input id="clothes_input" class="p-2 rounded-md w-7/12 " type="text" value="500" />
+                </div>
+            </div>
+
+            <div class="flex justify-center pb-3">
+                <button id="calculate_btn" class="inline px-5 py-3 bg-sky-500 rounded-md  text-xl  mt-10 w-7/12 text-center font-semibold text-white">Calculate
+                </button>
+            </div>
+            <h1 class="text-lg md:text-xl mt-3  mb-2 text-center font-semibold">Total Expenses: <span id="expenses_id">5500</span> </h1>
+
+            <h1 class="text-lg md:text-xl text-center font-semibold">Balance: <span id="balance_id">4500</span></h1>
+            <div class="grid grid-cols-2 py-5">
+                <div >
+                    <label for="save_input" class="">Save :</label>
+                    <input id="save_input" class="p-2 rounded-md w-4/12 " type="text" value="20" />
+                    <span class="">%</span>
+
+                </div>
+
+                <div>
+                    <button id="save_btn" class="  px-3 py-2  bg-sky-500 rounded-md  text-lg  w-6/12 text-center font-semibold text-white">Save
+                    </button>
+                </div>
+            </div>
+
+
+            <h1 class="text-lg md:text-xl mt-3  mb-2 text-center font-semibold">Saving Amount: <span id="saving_amount">2000</span> </h1>
+
+            <h1 class="text-lg md:text-xl text-center font-semibold">Remaining: <span id="remaining_id">2500</span></h1>
+                
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
